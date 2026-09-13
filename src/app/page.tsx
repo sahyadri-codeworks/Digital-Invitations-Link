@@ -7,7 +7,6 @@ import SacredHeader from '@/components/SacredHeader';
 import InvitationCard from '@/components/InvitationCard';
 import InteractiveBlessings from '@/components/InteractiveBlessings';
 import EventDetails from '@/components/EventDetails';
-import CalendarButton from '@/components/CalendarButton';
 import Countdown from '@/components/Countdown';
 import MusicPlayer from '@/components/MusicPlayer';
 import FlowerPetals from '@/components/FlowerPetals';
@@ -38,9 +37,6 @@ export default function Home() {
             <InvitationCard />
             <InteractiveBlessings />
             <EventDetails />
-            <div className="px-4 -mt-4 mb-8">
-              <CalendarButton />
-            </div>
             <Countdown />
             <Footer />
           </div>
