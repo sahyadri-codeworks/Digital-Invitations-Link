@@ -11,7 +11,7 @@ const notoSansDevanagari = Noto_Sans_Devanagari({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://example.com'),
+  metadataBase: new URL('https://sahyadri-codeworks.github.io/Digital-Invitations-Link'),
   title: invitation.seo.title,
   description: invitation.seo.description,
   openGraph: {
