@@ -1,6 +1,7 @@
-const isProd = process.env.NODE_ENV === 'production';
+const isVercel = !!process.env.VERCEL;
+const isGithubPages = !!process.env.GITHUB_ACTIONS;
 const repoName = 'Digital-Invitations-Link';
-const basePath = isProd ? `/${repoName}` : '';
+const basePath = !isVercel && isGithubPages ? `/${repoName}` : '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
