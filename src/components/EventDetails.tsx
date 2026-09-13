@@ -64,13 +64,10 @@ export default function EventDetails() {
           {/* Location card */}
           <motion.div className="info-card" variants={itemVariants}>
             <div className="text-3xl mb-3">📍</div>
-            <h3 className="text-sm text-maroon-500 font-medium mb-1 tracking-wider">
+            <h3 className="text-sm text-maroon-500 font-medium mb-2 tracking-wider">
               स्थळ
             </h3>
-            <p className="text-lg md:text-xl font-semibold text-maroon-900 mb-2">
-              {invitation.venue}
-            </p>
-            <p className="text-maroon-600 text-base leading-relaxed whitespace-pre-line">
+            <p className="text-maroon-700 text-base leading-relaxed whitespace-pre-line font-medium">
               {invitation.fullAddress}
             </p>
           </motion.div>
