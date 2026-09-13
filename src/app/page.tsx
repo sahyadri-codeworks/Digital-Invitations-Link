@@ -3,8 +3,11 @@
 import { useState, useCallback } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import OpeningScreen from '@/components/OpeningScreen';
+import SacredHeader from '@/components/SacredHeader';
 import InvitationCard from '@/components/InvitationCard';
+import InteractiveBlessings from '@/components/InteractiveBlessings';
 import EventDetails from '@/components/EventDetails';
+import CalendarButton from '@/components/CalendarButton';
 import Countdown from '@/components/Countdown';
 import MusicPlayer from '@/components/MusicPlayer';
 import FlowerPetals from '@/components/FlowerPetals';
@@ -30,9 +33,14 @@ export default function Home() {
       {isOpened && (
         <>
           <FlowerPetals />
-          <div className="relative z-10">
+          <div className="relative z-10 max-w-3xl mx-auto">
+            <SacredHeader />
             <InvitationCard />
+            <InteractiveBlessings />
             <EventDetails />
+            <div className="px-4 -mt-4 mb-8">
+              <CalendarButton />
+            </div>
             <Countdown />
             <Footer />
           </div>
